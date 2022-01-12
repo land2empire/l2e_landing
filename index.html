@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--    <link rel="stylesheet" href="css/style.css">-->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style.min.css?_v=5">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -24,7 +24,7 @@
     <div class="popup-loaded__image _img">
         <picture>
             <source srcset="img/crown.webp" type="image/webp">
-            <img src="img/crown.png" alt="">
+            <a href="https://testnet.landtoempire.com/?from=landing" target="_blank"><img src="img/crown.png" alt=""></a>
         </picture>
     </div>
 </div>
@@ -40,7 +40,6 @@
                 </div>
             </header>
             <div class="intro__bg">
-                <!--                <video class="intro__video" loop muted autoplay src="videos/intro.mp4"></video>-->
                 <video class="intro__video" loop muted autoplay>
                     <source src="videos/intro.webm" type="video/webm">
                     <source src="videos/intro.mp4" type="video/mp4">
@@ -68,23 +67,23 @@
             </div>
             <div class="about__images">
                 <div class="about__bg">
-                    <video loop muted autoplay>
-                        <source src="videos/about.webm" type="video/webm">
-                        <source src="videos/about.mp4" type="video/mp4">
-                    </video>
+                    <img src="images/bg_about.png"/>
                 </div>
-                <div class="about__image">
+                <div class="about__container">
+                    <h2 class="about__title">About</h2>
+                    <div class="about__text">Land to Empire is a play-to-earn mobile ready strategy game on Near Protocol.
+                        The game is set in a fantasy world where the player is the lord of the land. In LandtoEmpire, 
+                        players have to upgrade their land using resources gained from attacking other players lands 
+                        or producing them on their land. To attack, players train different types of troops using resources. 
+                        The main resources are gold and elixir. Players can unite into clans, which can then participate 
+                        in clan battles, and communicate with each other.
+                    </div>
+                </div>
+            <div class="about__image">
                     <picture>
                         <source srcset="img/about-image-2.webp" type="image/webp">
                         <img src="img/about-image-2.png" alt="">
                     </picture>
-                </div>
-            </div>
-            <div class="about__container">
-                <h2 class="about__title">About L2E</h2>
-                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
             </div>
         </section>
@@ -364,16 +363,23 @@
             </div>
             <div class="info__container">
                 <div class="info__items">
-                    <div class="info__item info__item_first">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    <div class="info__item info__item_first">
+                        Play to Earn<br/>
+                        The gamer can take buildings from the game to the marketplace in order to earn money from their NFT sale. 
+                        The buyer can enter the purchased asset into the game and continue to use its properties, 
+                        as well as to pump levels.
                     </div>
-                    <div data-da=".info__item,768.98" class="info__item info__item_last">"Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.
+                    <div data-da=".info__item,768.98" class="info__item info__item_last">
+                        Gameplay<br/>
+                        LandtoEmpire is a multiplayer game in which players create communities called clans, train troops, and attack other players to earn resources.
+                        The team's income is made up of commission from token withdrawals and royalties from the sale of NFTs.
+                    </div>
+                    <div data-da=".info__item,768.98" class="info__item info__item_last">
+                        Game tokens.<br/>
+                        Gold and elixir can be used to build and upgrade defences and traps that protect a player's village 
+                        from attacks by other players, as well as to build and upgrade buildings. Elixir used to train 
+                        and upgrade troops and spells. Gems are a premium token.
+                        Every owned in game token gamer can sell on DEX's.
                     </div>
                 </div>
             </div>
@@ -405,8 +411,12 @@
                 </div>
             </div>
             <div class="nft__container">
-                <div data-da=".nft__main,900.98,1" class="nft__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div data-da=".nft__main,900.98,1" class="nft__text">
+                    For $199 you can buy one of 10'000 premium lands with random levels of buildings.
+                    Very rare lands - will consist of few buildings of level 9-10, which in the game are pumped a year.
+                    The more common lands - will have few buildings from level 6-7. This is about a month's worth of play.
+                    Starting February 1, the project team will not create or sell any more NFTs.
+                    All subsequent NFTs will be minted by the gamers themselves. We will not spoil the market for them.
                 </div>
                 <div class="nft__main">
                     <div class="nft__info">
@@ -451,28 +461,24 @@
                 <h2 class="roadmap__title">roadmap</h2>
                 <div class="roadmap__items">
                     <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
+                        <div class="roadmap__subtitle">Dec 2021</div>
                         <button class="roadmap__btn">Testnet</button>
                     </div>
                     <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
+                        <div class="roadmap__subtitle">Jan 2022</div>
                         <button class="roadmap__btn">NFT marketplace</button>
                     </div>
                     <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn">Nft-packs sale</button>
+                        <div class="roadmap__subtitle">Jan 25 2022</div>
+                        <button class="roadmap__btn">Premium land sale</button>
                     </div>
                     <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
+                        <div class="roadmap__subtitle">Feb 1, 2022</div>
                         <button class="roadmap__btn roadmap__btn_red">Mainnet</button>
                     </div>
                     <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn roadmap__btn_red">IDO</button>
-                    </div>
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn roadmap__btn_red">ADO</button>
+                        <div class="roadmap__subtitle">Oct 2022</div>
+                        <button class="roadmap__btn roadmap__btn_red">Token sale</button>
                     </div>
                 </div>
             </div>

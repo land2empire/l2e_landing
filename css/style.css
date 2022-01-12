@@ -283,8 +283,13 @@ body._loaded .popup-loaded {
 .about__bg {
   margin-bottom: -4px; }
 
-.about__bg video {
-  width: 100%; }
+  .about__bg video {
+    width: 100%; 
+  }
+  .about__bg img {
+    display: block;
+      width: 100%; 
+  }      
 
 .about__image img {
   width: 100%; }
@@ -447,7 +452,7 @@ body._loaded .popup-loaded {
 .info__container {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 40%;
   width: 100%;
   -webkit-transform: translate(-50%, 0px);
   -ms-transform: translate(-50%, 0px);
