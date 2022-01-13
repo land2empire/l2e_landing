@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'acampus';
+    font-display: swap;
+    src: url("../fonts/acampus.woff2") format("woff2"), url("../fonts/acampus.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
 section {
     @apply w-screen;
 }
@@ -21,4 +29,105 @@ section {
 
 #about {
     background-image: url('../images/bg/02_about.jpg');
+}
+
+#gameplay {
+    background-image: url('../images/bg/03_gameplay.jpg');
+}
+
+.content_title {
+    @apply tracking-widest;
+    font-family: 'acampus', sans-serif;
+}
+
+.content_text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wide_container {
+    background-image: url('../images/place_vertical.png');
+    width: 558px;
+    height: 774px;
+}
+
+.wide_container_content {
+    @apply border border-red-500;
+    width: 282px;
+    height: 609px;
+    margin-top: 15px;
+}
+
+
+.vertical_box_parent {
+    @apply bg-no-repeat bg-bottom pt-20;
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+.vertical_box {
+    background-image: url('../images/place_vertical.png');
+    /*padding: 15px 138px 150px 138px;*/
+    width: 558px;
+    height: 774px;
+}
+
+.vertical_video {
+    @apply border border-red-500;
+    width: 282px;
+    height: 609px;
+    margin-top: 15px;
+
+}
+
+/*sm*/
+@media (min-width: 640px) {
+    .vertical_box_parent {
+        /*@apply bg-none pt-0;*/
+        /*background-image: none;*/
+    }
+}
+
+/*md*/
+@media (min-width: 768px) {
+    .vertical_box_parent {
+        @apply bg-none pt-0;
+        transform: translateY(20%) scale(.5);
+    }
+
+    .wide_container {
+        background-image: url('../images/place_square.png');
+        width: 971px;
+        height: 1014px;
+    }
+
+    .wide_container_content {
+        width: 680px;
+        height: 655px;
+        margin-top: 38px;
+    }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+    .vertical_box_parent {
+        transform: translateY(10%) scale(.75);
+    }
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    .vertical_box_parent {
+        transform: translateY(0%) scale(1);
+    }
+
+    .wide_container {
+        background-image: url('../images/place_wide.png');
+        width: 1466px;
+        height: 1014px;
+    }
+
+    .wide_container_content {
+        width: 1168px;
+        height: 655px;
+        margin-top: 38px;
+    }
 }

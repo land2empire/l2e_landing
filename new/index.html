@@ -15,10 +15,13 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<main class="lg:max-h-screen lg:overflow-y-scroll lg:overflow-x-hidden lg:snap lg:snap-y lg:snap-mandatory">
+<main class="lg:max-h-screen lg:overflow-y-scroll lg:overflow-x-hidden lg:snap lg:snap-y lg:snap-mandatory text-white">
 
     <header class="fixed top-0 left-0 w-full z-20">
         <picture class="w-full">
@@ -27,7 +30,7 @@
         </picture>
     </header>
 
-    <section id="intro" class="relative snap-start">
+    <section id="intro" class="relative snap-start bg-cover">
         <video loop muted autoplay class="z-0">
             <source src="videos/intro.webm" type="video/webm">
             <source src="videos/intro.mp4" type="video/mp4">
@@ -37,13 +40,48 @@
         </div>
     </section>
 
-    <section id="about" class=" lg:h-screen h-auto snap-start">
-        <div class="p-20">
-        <div class="grid grid-cols-3">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+    <section id="about" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20 p-10">
+            <div class="flex justify-center">
+                <div class="wide_container bg-no-repeat bg-center box-border flex justify-center">
+                    <div class="wide_container_content px-10 py-8 overflow-y-auto">
+                        <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10">About</div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            Land to Empire is a play-to-earn mobile ready strategy game on Near Protocol.
+                            The game is set in a fantasy world where the player is the lord of the land. In
+                            LandtoEmpire,
+                            players have to upgrade their land using resources gained from attacking other players lands
+                            or producing them on their land. To attack, players train different types of troops using
+                            resources.
+                            The main resources are gold and elixir. Players can unite into clans, which can then
+                            participate
+                            in clan battles, and communicate with each other.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="gameplay" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20">
+            <div class="md:grid md:grid-cols-3 content-end md:-mt-96 lg:-mt-52 xl:mt-0">
+                <div class="flex vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_video w-full h-full mr-auto ml-auto"></div>
+                    </div>
+                </div>
+                <div class="flex md:mt-10 vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_video w-full h-full mr-auto ml-auto"></div>
+                    </div>
+                </div>
+                <div class="flex vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_video w-full h-full mr-auto ml-auto"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
