@@ -35,6 +35,10 @@ section {
     background-image: url('../images/bg/03_gameplay.jpg');
 }
 
+#tokenomics {
+    background-image: url('../images/bg/05_tokenomics.jpg');
+}
+
 .content_title {
     @apply tracking-widest;
     font-family: 'acampus', sans-serif;
@@ -70,7 +74,7 @@ section {
     height: 774px;
 }
 
-.vertical_video {
+.vertical_box_content {
     @apply border border-red-500;
     width: 282px;
     height: 609px;
@@ -90,7 +94,7 @@ section {
 @media (min-width: 768px) {
     .vertical_box_parent {
         @apply bg-none pt-0;
-        transform: translateY(20%) scale(.5);
+        transform: translateY(20%) scale(.65);
     }
 
     .wide_container {
