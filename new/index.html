@@ -23,7 +23,7 @@
 <body>
 <main class="lg:max-h-screen lg:overflow-y-scroll lg:overflow-x-hidden lg:snap lg:snap-y lg:snap-mandatory text-white">
 
-    <header class="fixed top-0 left-0 w-full z-20">
+    <header class="fixed top-0 left-0 w-full z-50">
         <picture class="w-full">
             <source class="w-full" srcset="images/header-image.webp" type="image/webp">
             <img class="w-full" src="images/header-image.png" alt="">
@@ -36,8 +36,14 @@
             <source src="videos/intro.mp4" type="video/mp4">
         </video>
         <div class="z-10 block absolute w-full h-full text-center" id="play_button_block">
-            <p id="play_button_block_counter" class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center text-5xl space-x-2 flex items-center justify-center"></p>
-            <a id="play_button_block_button" class="z-10 absolute top-0 left-1/2 disabled inline-block h-full w-1/5 bg-center bg-contain bg-no-repeat" href="javascript:;"></a>
+            <p id="play_button_block_counter"
+               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center text-2xl space-x-2 flex items-center justify-center"></p>
+            <a id="play_button_block_button"
+               class="z-10 absolute top-0 left-1/2 disabled inline-block h-full w-1/5 bg-center bg-contain bg-no-repeat"
+               href="javascript:;"></a>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
         </div>
     </section>
 
@@ -62,6 +68,9 @@
                 </div>
             </div>
         </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png"/>
+        </div>
     </section>
 
     <section id="gameplay" class="snap-start bg-bottom bg-cover">
@@ -83,6 +92,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
         </div>
     </section>
 
@@ -133,6 +145,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
         </div>
     </section>
 

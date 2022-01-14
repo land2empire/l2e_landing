@@ -492,8 +492,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
-.z-20 {
-  z-index: 20;
+.z-50 {
+  z-index: 50;
 }
 
 .z-0 {
@@ -502,6 +502,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .z-10 {
   z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mr-auto {
@@ -530,6 +534,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .w-full {
@@ -608,13 +616,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -627,19 +639,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-black {
@@ -671,6 +673,30 @@ section {
   width: 100vw;
 }
 
+.grass {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.grass img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: auto;
+  width: 100%;
+  margin-bottom: -3%;
+}
+
+.ladder-left {
+  z-index: 20;
+  height: 100%;
+}
+
+.ladder-left img {
+  /*@apply w-auto h-full;*/
+}
+
 #intro {
   background-image: url('../images/bg/02_about.jpg');
 }
@@ -686,8 +712,7 @@ a#play_button_block_button {
 }
 
 #play_button_block_button.disabled {
-  opacity: 0.3;
-  filter: grayscale(100%);
+  background-image: url('../images/empty_button.png');
 }
 
 #play_button_block_counter {

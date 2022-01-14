@@ -20,7 +20,7 @@ let timerInterval = setInterval(function () {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    let counterText = (days ? "<span>" + days + "d</span> " : "")
+    let counterText = (days ? "<span class='pr-2'>" + days + "d</span> " : "")
         + "<span>" + twoDigits(hours) + "</span>"
         + "<span>:</span>"
         + "<span>" + twoDigits(minutes) + "</span>"

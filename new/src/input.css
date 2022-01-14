@@ -14,6 +14,29 @@ section {
     @apply w-screen;
 }
 
+.grass {
+    @apply w-full relative z-10;
+}
+
+.grass img {
+    @apply absolute left-0 bottom-0 w-full h-auto;
+    margin-bottom: -3%;
+}
+
+
+
+
+.ladder-left {
+    @apply h-full z-20
+}
+
+.ladder-left img {
+    /*@apply w-auto h-full;*/
+}
+
+
+
+
 #intro {
     background-image: url('../images/bg/02_about.jpg');
 }
@@ -29,11 +52,11 @@ a#play_button_block_button {
 }
 
 #play_button_block_button.disabled {
-    @apply opacity-30;
-    filter: grayscale(100%);
+    background-image: url('../images/empty_button.png');
 }
 
 #play_button_block_counter {
+
     margin-left: -10%;
     font-family: 'acampus', sans-serif;
 }
