@@ -37,3 +37,21 @@ let timerInterval = setInterval(function () {
         document.getElementById("play_button_block_counter").style.display = 'none';
     }
 }, 1000);
+
+$(document).ready(function () {
+
+    let resizeTimeout;
+    recalculateLadder();
+
+    $(window).on('resize', function () {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(recalculateLadder, 50);
+    });
+
+    function recalculateLadder() {
+        $('.ladder').each(function () {
+            let $element = $(this);
+            $element.height($element.closest('section').height() + 50);
+        });
+    }
+})

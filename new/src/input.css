@@ -11,7 +11,7 @@
 }
 
 section {
-    @apply w-screen;
+    @apply w-screen relative;
 }
 
 .grass {
@@ -23,18 +23,26 @@ section {
     margin-bottom: -3%;
 }
 
-
-
+.ladder {
+    @apply absolute top-0;
+    margin-top: -50px;
+}
 
 .ladder-left {
-    @apply h-full z-20
+    @apply -left-16;
 }
 
-.ladder-left img {
-    /*@apply w-auto h-full;*/
+.ladder-right {
+    @apply -right-8;
 }
 
+.ladder-left, .ladder-right {
+    @apply z-20
+}
 
+.ladder-left img, .ladder-right img {
+    @apply w-auto h-full;
+}
 
 
 #intro {
@@ -52,11 +60,10 @@ a#play_button_block_button {
 }
 
 #play_button_block_button.disabled {
-    background-image: url('../images/empty_button.png');
+    background-image: none;
 }
 
 #play_button_block_counter {
-
     margin-left: -10%;
     font-family: 'acampus', sans-serif;
 }

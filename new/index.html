@@ -37,7 +37,7 @@
         </video>
         <div class="z-10 block absolute w-full h-full text-center" id="play_button_block">
             <p id="play_button_block_counter"
-               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center text-2xl space-x-2 flex items-center justify-center"></p>
+               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl space-x-2 flex items-center justify-center"></p>
             <a id="play_button_block_button"
                class="z-10 absolute top-0 left-1/2 disabled inline-block h-full w-1/5 bg-center bg-contain bg-no-repeat"
                href="javascript:;"></a>
@@ -71,6 +71,10 @@
         <div class="grass">
             <img src="./images/bg/grass.png"/>
         </div>
+
+        <div class="ladder-left ladder">
+            <img src="./images/ladder-left.png"/>
+        </div>
     </section>
 
     <section id="gameplay" class="snap-start bg-bottom bg-cover">
@@ -95,6 +99,9 @@
         </div>
         <div class="grass">
             <img src="./images/bg/grass.png" class="w-full h-auto"/>
+        </div>
+        <div class="ladder-right ladder">
+            <img src="./images/ladder-right.png"/>
         </div>
     </section>
 
@@ -153,5 +160,8 @@
 
 </main>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="src/js.js"></script>
 </html>
