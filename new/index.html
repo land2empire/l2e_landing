@@ -35,8 +35,9 @@
             <source src="videos/intro.webm" type="video/webm">
             <source src="videos/intro.mp4" type="video/mp4">
         </video>
-        <div class="z-10 block absolute w-full h-full text-center " id="play_button_block">
-            <a class="inline-block h-full w-1/5 bg-center bg-contain bg-no-repeat" href="javascript:;"></a>
+        <div class="z-10 block absolute w-full h-full text-center" id="play_button_block">
+            <p id="play_button_block_counter" class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center text-5xl space-x-2 flex items-center justify-center"></p>
+            <a id="play_button_block_button" class="z-10 absolute top-0 left-1/2 disabled inline-block h-full w-1/5 bg-center bg-contain bg-no-repeat" href="javascript:;"></a>
         </div>
     </section>
 
@@ -137,4 +138,5 @@
 
 </main>
 </body>
+<script type="text/javascript" src="src/js.js"></script>
 </html>

@@ -23,8 +23,23 @@ section {
     height: 10%;
 }
 
-#intro #play_button_block a {
+a#play_button_block_button {
     background-image: url('../images/intro-btn.png');
+    margin-left: -10%;
+}
+
+#play_button_block_button.disabled {
+    @apply opacity-30;
+    filter: grayscale(100%);
+}
+
+#play_button_block_counter {
+    margin-left: -10%;
+    font-family: 'acampus', sans-serif;
+}
+
+#play_button_block_counter span {
+    @apply inline-block;
 }
 
 #about {
