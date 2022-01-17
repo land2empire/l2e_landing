@@ -84,6 +84,10 @@ a#play_button_block_button {
     background-image: url('../images/bg/05_tokenomics.jpg');
 }
 
+#footer {
+    /*background-image: url('../images/bg/footer.png');*/
+}
+
 .content_title {
     @apply tracking-widest;
     font-family: 'acampus', sans-serif;
