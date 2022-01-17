@@ -59,6 +59,12 @@ a#play_button_block_button {
     margin-left: -10%;
 }
 
+a#play_button_block_button_whitelist {
+    background-position: 50% 60%;
+    background-image: url('../images/empty_button.png');
+    margin-left: -10%;
+}
+
 #play_button_block_button.disabled {
     background-image: none;
 }
