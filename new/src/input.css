@@ -86,8 +86,20 @@ a#play_button_block_button_whitelist {
     background-image: url('../images/bg/03_gameplay.jpg');
 }
 
+#how2play {
+    background-image: url('../images/bg/03_gameplay.jpg');
+}
+
 #tokenomics {
     background-image: url('../images/bg/05_tokenomics.jpg');
+}
+
+#assets {
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+#premium_lands {
+    background-image: url('../images/bg/03_gameplay.jpg');
 }
 
 #footer {
@@ -116,7 +128,6 @@ a#play_button_block_button_whitelist {
     margin-top: 15px;
 }
 
-
 .vertical_box_parent {
     @apply bg-no-repeat bg-bottom pt-20;
     background-image: url('../images/bg/02_about.jpg');
@@ -137,6 +148,30 @@ a#play_button_block_button_whitelist {
 
 }
 
+
+.square_box_parent {
+    @apply bg-no-repeat bg-bottom pt-20;
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+.square_box {
+    background-image: url('../images/place_square.png');
+    padding: 0px 146px 322px 146px;
+    /*padding-left: 20px;*/
+    /*padding-right: 30px;*/
+    width: 971px;
+    height: 1014px;
+}
+
+.square_box_content {
+    @apply border border-red-500;
+    width: 680px;
+    height: 655px;
+    margin-top: 38px;
+
+}
+
+
 /*sm*/
 @media (min-width: 640px) {
     .vertical_box_parent {
@@ -150,6 +185,10 @@ a#play_button_block_button_whitelist {
     .vertical_box_parent {
         @apply bg-none pt-0;
         transform: translateY(20%) scale(.65);
+    }
+
+    .square_box_parent {
+        @apply bg-none pt-0;
     }
 
     .wide_container {

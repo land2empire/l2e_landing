@@ -42,16 +42,26 @@ $(document).ready(function () {
 
     let resizeTimeout;
     recalculateLadder();
+    recalculateBoxes();
 
     $(window).on('resize', function () {
         clearTimeout(resizeTimeout);
         resizeTimeout = setTimeout(recalculateLadder, 50);
+        resizeTimeout = setTimeout(recalculateBoxes, 50);
     });
 
     function recalculateLadder() {
         $('.ladder').each(function () {
             let $element = $(this);
             $element.height($element.closest('section').height() + 50);
+        });
+    }
+
+    function recalculateBoxes() {
+        let squareFull = 971;
+        $('.square_box_parent').each(function () {
+            let scale = $(this).width() >= squareFull ? 1 : $(this).width() / squareFull;
+            $(this).find('.square_box').css({transform: 'scale(' + (scale) + ')'});
         });
     }
 })

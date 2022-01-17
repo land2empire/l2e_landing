@@ -492,18 +492,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
-.-bottom-14 {
-  bottom: -3.5rem;
-}
-
-.-bottom-12 {
-  bottom: -3rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
 .-bottom-6 {
   bottom: -1.5rem;
 }
@@ -566,6 +554,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-1\/5 {
   width: 20%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .resize {
@@ -657,9 +649,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-3xl {
@@ -667,14 +659,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-black {
@@ -786,8 +778,20 @@ a#play_button_block_button_whitelist {
   background-image: url('../images/bg/03_gameplay.jpg');
 }
 
+#how2play {
+  background-image: url('../images/bg/03_gameplay.jpg');
+}
+
 #tokenomics {
   background-image: url('../images/bg/05_tokenomics.jpg');
+}
+
+#assets {
+  background-image: url('../images/bg/02_about.jpg');
+}
+
+#premium_lands {
+  background-image: url('../images/bg/03_gameplay.jpg');
 }
 
 #footer {
@@ -841,6 +845,31 @@ a#play_button_block_button_whitelist {
   margin-top: 15px;
 }
 
+.square_box_parent {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+  background-image: url('../images/bg/02_about.jpg');
+}
+
+.square_box {
+  background-image: url('../images/place_square.png');
+  padding: 0px 146px 322px 146px;
+  /*padding-left: 20px;*/
+  /*padding-right: 30px;*/
+  width: 971px;
+  height: 1014px;
+}
+
+.square_box_content {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  width: 680px;
+  height: 655px;
+  margin-top: 38px;
+}
+
 /*sm*/
 
 @media (min-width: 640px) {
@@ -863,6 +892,14 @@ a#play_button_block_button_whitelist {
 
   .vertical_box_parent {
     transform: translateY(20%) scale(.65);
+  }
+
+  .square_box_parent {
+    background-image: none;
+  }
+
+  .square_box_parent {
+    padding-top: 0px;
   }
 
   .wide_container {
@@ -927,6 +964,10 @@ a#play_button_block_button_whitelist {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
@@ -938,6 +979,11 @@ a#play_button_block_button_whitelist {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-5xl {
@@ -953,11 +999,6 @@ a#play_button_block_button_whitelist {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
