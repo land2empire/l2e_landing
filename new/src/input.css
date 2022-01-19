@@ -135,6 +135,10 @@ a#play_button_block_button_whitelist-bottom {
     background-image: url('../images/bg/03_gameplay.jpg');
 }
 
+#partners {
+    background-image: url('../images/bg/08_partners.jpg');
+}
+
 #footer {
     /*background-image: url('../images/bg/footer.png');*/
 }
