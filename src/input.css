@@ -1,0 +1,290 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'acampus';
+    font-display: swap;
+    src: url("../fonts/acampus.woff2") format("woff2"), url("../fonts/acampus.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #302922;
+}
+
+main {
+    max-width: 1920px;
+    width: auto;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    @apply tracking-widest font-bold;
+    font-family: 'acampus', sans-serif;
+}
+
+section {
+    @apply w-full relative;
+}
+
+.grass {
+    @apply w-full relative z-10;
+}
+
+.grass img {
+    @apply absolute left-0 bottom-0 w-full h-auto;
+    margin-bottom: -3%;
+}
+
+.ladder {
+    @apply absolute top-0;
+    margin-top: -50px;
+}
+
+.ladder-left {
+    @apply -left-12;
+}
+
+.ladder-right {
+    @apply -right-12;
+}
+
+.ladder-left, .ladder-right {
+    @apply z-20
+}
+
+.ladder-left img, .ladder-right img {
+    @apply w-auto h-full;
+}
+
+
+#intro {
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+#play_button_block {
+    bottom: 25%;
+    height: 10%;
+}
+
+#play_button_block-bottom {
+    bottom: 80%;
+    height: 8%;
+}
+
+a#play_button_block_button,
+a#play_button_block_button-bottom {
+    background-image: url('../images/intro-btn.png');
+    margin-left: -10%;
+}
+
+a#play_button_block_button_whitelist,
+a#play_button_block_button_whitelist-bottom {
+    background-position: 50% 60%;
+    background-image: url('../images/empty_button.png');
+    margin-left: -35%;
+    width: 70%;
+    height: 150%;
+}
+
+#play_button_block_button.disabled,
+#play_button_block_button-bottom.disabled {
+    background-image: none;
+}
+
+#play_button_block_counter,
+#play_button_block_counter-bottom {
+    margin-left: -10%;
+    font-family: 'acampus', sans-serif;
+}
+
+#play_button_block_counter span,
+#play_button_block_counter-bottom span {
+    @apply inline-block;
+}
+
+#about {
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+#gameplay {
+    background-image: url('../images/bg/03_gameplay.jpg');
+}
+
+#how2play {
+    background-image: url('../images/bg/03_gameplay.jpg');
+}
+
+#tokenomics {
+    background-image: url('../images/bg/05_tokenomics.jpg');
+}
+
+#assets {
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+#premium_lands {
+    background-image: url('../images/bg/03_gameplay.jpg');
+}
+
+#partners {
+    background-image: url('../images/bg/08_partners.jpg');
+}
+
+#footer {
+    /*background-image: url('../images/bg/footer.png');*/
+}
+
+.content_title {
+    @apply tracking-widest;
+    font-family: 'acampus', sans-serif;
+}
+
+.content_text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wide_container {
+    background-image: url('../images/place_vertical.png');
+    width: 558px;
+    height: 774px;
+}
+
+.wide_container_content {
+    /*@apply border border-red-500;*/
+    width: 282px;
+    height: 609px;
+    margin-top: 15px;
+}
+
+.vertical_box_parent {
+    @apply bg-no-repeat bg-bottom pt-20;
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+.vertical_box {
+    background-image: url('../images/place_vertical.png');
+    /*padding: 15px 138px 150px 138px;*/
+    width: 558px;
+    height: 774px;
+}
+
+.vertical_box_content {
+    /*@apply border border-red-500;*/
+    width: 282px;
+    height: 609px;
+    margin-top: 15px;
+
+}
+
+
+.square_box_parent {
+    @apply bg-no-repeat bg-bottom pt-20;
+    background-image: url('../images/bg/02_about.jpg');
+}
+
+.square_box {
+    background-image: url('../images/place_square.png');
+    padding: 0px 146px 322px 146px;
+    /*padding-left: 20px;*/
+    /*padding-right: 30px;*/
+    width: 971px;
+    height: 1014px;
+}
+
+.square_box_content {
+    /*@apply border border-red-500;*/
+    width: 680px;
+    height: 655px;
+    margin-top: 38px;
+}
+
+
+@media (min-width: 580px) {
+    a#play_button_block_button_whitelist,
+    a#play_button_block_button_whitelist-bottom {
+        margin-left: -25%;
+        width: 50%;
+        height: 110%;
+    }
+
+    #play_button_block-bottom {
+        bottom: 30%;
+        height: 10%;
+    }
+}
+
+/*sm*/
+@media (min-width: 640px) {
+    a#play_button_block_button_whitelist,
+    a#play_button_block_button_whitelist-bottom {
+        margin-left: -12.5%;
+        width: 25%;
+        height: 100%;
+    }
+}
+
+/*md*/
+@media (min-width: 768px) {
+    .vertical_box_parent {
+        @apply bg-none pt-0;
+        transform: translateY(20%) scale(.65);
+    }
+
+    .square_box_parent {
+        @apply bg-none pt-0;
+    }
+
+    .wide_container {
+        background-image: url('../images/place_square.png');
+        width: 971px;
+        height: 1014px;
+    }
+
+    .wide_container_content {
+        width: 680px;
+        height: 655px;
+        margin-top: 38px;
+    }
+
+    a#play_button_block_button_whitelist,
+    a#play_button_block_button_whitelist-bottom {
+        margin-left: -10%;
+        width: 20%;
+    }
+}
+
+/*lg*/
+@media (min-width: 1024px) {
+    .vertical_box_parent {
+        transform: translateY(10%) scale(.75);
+    }
+}
+
+/*xl*/
+@media (min-width: 1280px) {
+    .vertical_box_parent {
+        transform: translateY(0%) scale(1);
+    }
+
+    .wide_container {
+        background-image: url('../images/place_wide.png');
+        width: 1466px;
+        height: 1014px;
+    }
+
+    .wide_container_content {
+        width: 1168px;
+        height: 655px;
+        margin-top: 38px;
+    }
+}
