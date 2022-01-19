@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
     <title>Land to Empire</title>
     <meta charset="UTF-8">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--    <link rel="stylesheet" href="css/style.css">-->
-    <link rel="stylesheet" href="css/style.min.css?_v=5">
+    <link href="dist/output.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -17,549 +15,463 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body class="_loaded _lock">
-<div class="popup-loaded">
-    <div class="popup-loaded__image _img">
-        <picture>
-            <source srcset="img/crown.webp" type="image/webp">
-            <img src="img/crown.png" alt="">
+<body>
+<!--<main class="text-white relative">-->
+<main class="relative lg:max-h-screen lg:overflow-y-scroll lg:overflow-x-hidden lg:snap lg:snap-y lg:snap-mandatory text-white">
+
+    <header class="absolute top-0 z-50">
+        <picture class="w-full">
+            <source class="w-full" srcset="images/header-image.webp" type="image/webp">
+            <img class="w-full" src="images/header-image.png" alt="">
         </picture>
-    </div>
-</div>
-<div class="wrapper">
+    </header>
 
-    <main>
+    <section id="intro" class="relative snap-start bg-cover">
+        <video loop muted autoplay class="z-0">
+            <source src="videos/intro.webm" type="video/webm">
+            <source src="videos/intro.mp4" type="video/mp4">
+        </video>
+        <div class="z-10 block absolute w-full h-full text-center" id="play_button_block">
+            <p id="play_button_block_counter"
+               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center
+               text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+               space-x-2 flex items-center justify-center"></p>
+            <a id="play_button_block_button_whitelist"
+               class="z-10 absolute
+               -bottom-7 sm:-bottom-8 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full
+               text-xl md:text-xl
+               bg-contain bg-no-repeat
+                flex justify-center items-center  whitespace-nowrap"
+               href="javascript:;">Join the whitelist</a>
+            <a id="play_button_block_button"
+               class="z-10 absolute top-0 left-1/2 disabled inline-block h-full
+               w-1/5
+               bg-center bg-contain bg-no-repeat"
+               href="javascript:;"></a>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
+        </div>
+    </section>
 
-        <!-- Intro -->
-        <section class="intro">
-            <header class="header">
-                <div class="header__image">
-                    <img src="img/header-image.png" alt="">
-                </div>
-            </header>
-            <div class="intro__bg">
-                <!--                <video class="intro__video" loop muted autoplay src="videos/intro.mp4"></video>-->
-                <video class="intro__video" loop muted autoplay>
-                    <source src="videos/intro.webm" type="video/webm">
-                    <source src="videos/intro.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="intro__container">
-                <a href="" class="intro__btn">
-                    <picture>
-                        <source srcset="img/intro-btn.webp" type="image/webp">
-                        <img src="img/intro-btn.png" alt="">
-                    </picture>
-                </a>
-            </div>
-        </section>
-        <!-- Intro end -->
-
-
-        <!-- About -->
-        <section class="about">
-            <div class="about__decor">
-                <picture>
-                    <source srcset="img/decor-right.webp" type="image/webp">
-                    <img src="img/decor-right.png" alt="">
-                </picture>
-            </div>
-            <div class="about__images">
-                <div class="about__bg">
-                    <video loop muted autoplay>
-                        <source src="videos/about.webm" type="video/webm">
-                        <source src="videos/about.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="about__image">
-                    <picture>
-                        <source srcset="img/about-image-2.webp" type="image/webp">
-                        <img src="img/about-image-2.png" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="about__container">
-                <h2 class="about__title">About L2E</h2>
-                <div class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-            </div>
-        </section>
-        <!-- About end -->
-
-
-        <!-- Tips -->
-        <section class="tips">
-            <div class="tips__bg">
-                <!--                <video loop muted autoplay src="videos/tips.mp4"></video>-->
-                <video loop muted autoplay>
-                    <source src="videos/tips.webm" type="video/webm">
-                    <source src="videos/tips.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="tips__decor">
-                <picture>
-                    <source srcset="img/decor-left.webp" type="image/webp">
-                    <img src="img/decor-left.png" alt="">
-                </picture>
-            </div>
-        </section>
-        <!-- Tips end -->
-
-
-        <!-- Upgrade -->
-        <section class="upgrade">
-            <div class="upgrade__decor">
-                <picture>
-                    <source srcset="img/decor-right.webp" type="image/webp">
-                    <img src="img/decor-right.png" alt="">
-                </picture>
-            </div>
-            <div class="upgrade__images">
-                <div class="upgrade__image">
-                    <picture>
-                        <source srcset="img/upgrade-image.webp" type="image/webp">
-                        <img src="img/upgrade-image.png" alt="">
-                    </picture>
-                </div>
-                <div class="upgrade__image">
-                    <picture>
-                        <source srcset="img/upgrade-image-2.webp" type="image/webp">
-                        <img src="img/upgrade-image-2.png" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="upgrade__container">
-                <div class="upgrade__slider">
-                    <div class="upgrade__arrows">
-                        <button class="upgrade__arrow upgrade__arrow_left">
-                            <img src="img/upgrade-slider-arrow-left.svg" alt="">
-                        </button>
-                        <button class="upgrade__arrow upgrade__arrow_right">
-                            <img src="img/upgrade-slider-arrow-right.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="upgrade__swiper">
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 1</div>
+    <section id="about" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20 p-10">
+            <div class="flex justify-center">
+                <div class="wide_container bg-no-repeat bg-center box-border flex justify-center">
+                    <div class="wide_container_content px-10 py-8 overflow-y-auto">
+                        <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10"><h1>About</h1></div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            Land to Empire is a play-to-earn mobile ready strategy game on Near Protocol.
+                            The game is set in a fantasy world where the player is the lord of the land. In
+                            LandtoEmpire,
+                            players have to upgrade their land using resources gained from attacking other players lands
+                            or producing them on their land. To attack, players train different types of troops using
+                            resources.
+                            The main resources are gold and elixir. Players can unite into clans, which can then
+                            participate
+                            in clan battles, and communicate with each other.
                         </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 2</div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            A premium GEM token is used to speed up construction and upgrades. GEMs can be obtained by
+                            passing levels and completing various tasks.
                         </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 3</div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            Players can trade game tokens on the exchange, withdraw and deposit them into the game.
                         </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 4</div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            To trade units in the game built nft-marketplace.
                         </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 5</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 6</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-1.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 7</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 1</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 2</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 3</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 4</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 5</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 6</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-2.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-2.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 7</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 1</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 2</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 3</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 4</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 5</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 6</div>
-                        </div>
-                        <div class="upgrade__slide slide-upgrade">
-                            <div class="slide-upgrade__image">
-                                <picture>
-                                    <source srcset="img/upgrade-slide-3.webp" type="image/webp">
-                                    <img src="img/upgrade-slide-3.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="slide-upgrade__title">Lvl 7</div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            The game team supports the Proof-of-Game standard - this means that the creators of the game
+                            will not trade tokens and nft, all tokens put up for sale will come from real players with a
+                            link to their land. The team's earnings are royalties from p2p nft trading. Everything else
+                            is the players' earnings.
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Upgrade end -->
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png"/>
+        </div>
 
+        <div class="ladder-left ladder hidden lg:block">
+            <img src="./images/ladder-left.png"/>
+        </div>
+    </section>
 
-        <!-- Info -->
-        <section class="info">
-            <div class="info__decor">
-                <picture>
-                    <source srcset="img/decor-left.webp" type="image/webp">
-                    <img src="img/decor-left.png" alt="">
-                </picture>
-            </div>
-            <div class="info__images">
-                <div class="info__bg">
-                    <!--                    <video loop muted autoplay src="videos/info.mp4"></video>-->
-                    <video loop muted autoplay>
-                        <source src="videos/info.webm" type="video/webm">
-                        <source src="videos/info.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="info__image">
-                    <picture>
-                        <source srcset="img/info-image-2.webp" type="image/webp">
-                        <img src="img/info-image-2.png" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="info__container">
-                <div class="info__items">
-                    <div class="info__item info__item_first">"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    <section id="gameplay" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20">
+            <div class="md:grid md:grid-cols-3 content-end md:-mt-96 lg:-mt-52 xl:mt-0">
+                <div class="flex vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_box_content w-full h-full mr-auto ml-auto"></div>
                     </div>
-                    <div data-da=".info__item,768.98" class="info__item info__item_last">"Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur.
+                </div>
+                <div class="flex md:mt-20 vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_box_content w-full h-full mr-auto ml-auto">
+                            <video loop muted autoplay class="z-0 w-full h-full">
+                                <source src="videos/video_1_crop.webm" type="video/webm">
+                                <source src="videos/video_1_crop.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_box_content w-full h-full mr-auto ml-auto"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Info end -->
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
+        </div>
+        <div class="ladder-right ladder hidden lg:block">
+            <img src="./images/ladder-right.png"/>
+        </div>
+    </section>
 
+    <section id="tokenomics" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20">
+            <div class="md:grid md:grid-cols-3 content-end md:-mt-96 lg:-mt-52 xl:mt-0">
+                <div class="flex vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_box_content w-full h-full mr-auto ml-auto p-8 overflow-y-auto">
+                            <div class="content_title text-2xl md:text-4xl font-black pb-5 md:pb-10"><h1>
+                                Play to Earn
+                            </h1></div>
+                            <div class="content_text text-lg md:text-xl  leading-relaxed">
+                                The gamer can take buildings from the game to the marketplace in order to earn money
+                                from their NFT sale.
+                                The buyer can enter the purchased asset into the game and continue to use its
+                                properties,
+                                as well as to pump levels.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:mt-20 vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_box_content w-full h-full mr-auto ml-auto p-8 overflow-y-auto">
+                            <div class="content_title text-2xl md:text-4xl font-black pb-5 md:pb-10"><h1>Gameplay</h1>
+                            </div>
+                            <div class="content_text text-lg md:text-xl leading-relaxed"> LandtoEmpire is a multiplayer
+                                game in which players create communities called clans, train troops, and attack other
+                                players to earn resources.
+                                The team's income is made up of commission from token withdrawals and royalties from the
+                                sale of NFTs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex vertical_box_parent justify-center">
+                    <div class="vertical_box bg-no-repeat bg-center box-border">
+                        <div class="vertical_box_content w-full h-full mr-auto ml-auto p-8 overflow-y-auto">
+                            <div class="content_title text-2xl md:text-4xl font-black pb-5 md:pb-10"><h1>Game
+                                tokens</h1></div>
+                            <div class="content_text text-lg md:text-xl  leading-relaxed">
+                                Gold and elixir can be used to build and upgrade defences and traps that protect a
+                                player's village
+                                from attacks by other players, as well as to build and upgrade buildings. Elixir used to
+                                train
+                                and upgrade troops and spells. Gems are a premium token.
+                                Every owned in game token gamer can sell on DEX's.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- Nft -->
-        <section class="nft">
-            <div class="nft__decor">
-                <picture>
-                    <source srcset="img/decor-right.webp" type="image/webp">
-                    <img src="img/decor-right.png" alt="">
-                </picture>
-            </div>
-            <div class="nft__images">
-                <div class="nft__bg">
-                    <!--                    <video loop muted autoplay src="videos/nft.mp4"></video>-->
-                    <video loop muted autoplay>
-                        <source src="videos/nft.webm" type="video/webm">
-                        <source src="videos/nft.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="nft__bg">
-                    <picture>
-                        <source srcset="img/nft-bg-2.webp" type="image/webp">
-                        <img src="img/nft-bg-2.png" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="nft__container">
-                <div data-da=".nft__main,900.98,1" class="nft__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-                <div class="nft__main">
-                    <div class="nft__info">
-                        <h2 class="nft__title">NFT</h2>
-                    </div>
-                    <div class="nft__image">
-                        <picture>
-                            <source srcset="img/nft-image.webp" type="image/webp">
-                            <img src="img/nft-image.png" alt="">
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Nft end -->
+        <div class="ladder-left ladder hidden lg:block">
+            <img src="./images/ladder-left.png"/>
+        </div>
 
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
+        </div>
+    </section>
 
-        <!-- RoadMap -->
-        <section class="roadmap">
-            <div class="roadmap__decor">
-                <picture>
-                    <source srcset="img/decor-left.webp" type="image/webp">
-                    <img src="img/decor-left.png" alt="">
-                </picture>
-            </div>
-            <div class="roadmap__images">
-                <div class="roadmap__bg">
-                    <!--                    <video loop muted autoplay src="videos/roadmap.mp4"></video>-->
-                    <video loop muted autoplay>
-                        <source src="videos/roadmap.webm" type="video/webm">
-                        <source src="videos/roadmap.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="roadmap__image">
-                    <picture>
-                        <source srcset="img/roadmap-image-2.webp" type="image/webp">
-                        <img src="img/roadmap-image-2.png" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="roadmap__container">
-                <h2 class="roadmap__title">roadmap</h2>
-                <div class="roadmap__items">
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn">Testnet</button>
+    <section id="assets" class="snap-start bg-bottom bg-cover">
+        <div class="pt-20 px-10 pb-40">
+            <div class="flex justify-center">
+                <div>
+                    <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10 text-center">
+                        <h1>Assets</h1>
                     </div>
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn">NFT marketplace</button>
-                    </div>
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn">Nft-packs sale</button>
-                    </div>
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn roadmap__btn_red">Mainnet</button>
-                    </div>
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn roadmap__btn_red">IDO</button>
-                    </div>
-                    <div class="roadmap__item">
-                        <div class="roadmap__subtitle">Q2'22</div>
-                        <button class="roadmap__btn roadmap__btn_red">ADO</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- RoadMap end -->
+                    <div class="space-y-12 px-10">
+                        <div class="flex justify-center gap-12 flex-wrap">
+                            <div class="asset_place">
+                                <img src="images/units/elixir_collector11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/elixir_collector.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/elixir_storage11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/elixir_storage.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/gold_mine11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/gold_mine.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/gold_storage11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/gold_storage.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/laboratory8.png" class="asset_place-first"/>
+                                <img src="images/anim_units/laboratory.gif" class="asset_place-anim"/>
+                            </div>
+                        </div>
 
+                        <div class="flex justify-center gap-12 flex-wrap">
+                            <div class="asset_place">
+                                <img src="images/units/air_defense8.png" class="asset_place-first"/>
+                                <img src="images/anim_units/air_defense.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/cannon12.png" class="asset_place-first"/>
+                                <img src="images/anim_units/cannon.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/mortar7.png" class="asset_place-first"/>
+                                <img src="images/anim_units/mortar.gif" class="asset_place-anim"/>
+                            </div>
+                        </div>
 
-        <!-- Partners -->
-        <section class="partners">
-            <div class="partners__decor">
-                <picture>
-                    <source srcset="img/decor-right.webp" type="image/webp">
-                    <img src="img/decor-right.png" alt="">
-                </picture>
-            </div>
-            <div class="partners__images">
-                <div class="partners__bg">
-                    <!--                    <video loop muted autoplay src="videos/partners.mp4"></video>-->
-                    <video loop muted autoplay>
-                        <source src="videos/partners.webm" type="video/webm">
-                        <source src="videos/partners.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="partners__bg">
-                    <picture>
-                        <source srcset="img/partners-bg-2.webp" type="image/webp">
-                        <img src="img/partners-bg-2.png" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="partners__container">
-                <h2 class="partners__title">Partners</h2>
-                <div class="partners__items">
-                    <div class="partners__item">
-                        <picture>
-                            <source srcset="img/partners-image-1.webp" type="image/webp">
-                            <img src="img/partners-image-1.png" alt="">
-                        </picture>
-                    </div>
-                    <div class="partners__item">
-                        <picture>
-                            <source srcset="img/partners-image-2.webp" type="image/webp">
-                            <img src="img/partners-image-2.png" alt="">
-                        </picture>
-                    </div>
-                    <div data-da=".partners__items,768.98,1" class="partners__item">
-                        <picture>
-                            <source srcset="img/partners-image-3.webp" type="image/webp">
-                            <img src="img/partners-image-3.png" alt="">
-                        </picture>
+                        <div class="flex justify-center gap-12 flex-wrap">
+                            <div class="asset_place">
+                                <img src="images/units/archer_tower11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/archer_tower.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/army_camp8.png" class="asset_place-first"/>
+                                <img src="images/anim_units/army_camp.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/barrack11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/barrack.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/clan_castle5.png" class="asset_place-first"/>
+                                <img src="images/anim_units/clan_castle.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/hidden_tesla7.png" class="asset_place-first"/>
+                                <img src="images/anim_units/hidden_tesla.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/town_hall10.png" class="asset_place-first"/>
+                                <img src="images/anim_units/town_hall.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/wizard_tower7.png" class="asset_place-first"/>
+                                <img src="images/anim_units/wizard_tower.gif" class="asset_place-anim"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Partners end -->
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png"/>
+        </div>
 
+        <div class="ladder-right ladder hidden lg:block">
+            <img src="./images/ladder-right.png"/>
+        </div>
+    </section>
 
-        <!-- Ready -->
-        <section class="ready">
-            <a href="" class="ready__bg">
-                <!--                <video loop muted autoplay src="videos/ready.mp4"></video>-->
-                <video loop muted autoplay>
-                    <source src="videos/ready.webm" type="video/webm">
-                    <source src="videos/ready.mp4" type="video/mp4">
-                </video>
-            </a>
-            <div class="ready__container">
-                <div class="ready__icons">
-                    <a target="blank" href="https://twitter.com/LandToEmpire" class="ready__icon">
-                        <img src="img/twitter.svg" alt="">
+    <section id="how2play" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20 p-10">
+            <div class="flex justify-center">
+                <div class="wide_container bg-no-repeat bg-center box-border flex justify-center">
+                    <div class="wide_container_content px-10 py-8 overflow-y-auto">
+                        <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10"><h1>How to play</h1>
+                        </div>
+                        <div class="content_text text-xl md:text-2xl leading-relaxed">
+                            How to play
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png"/>
+        </div>
+
+        <div class="ladder-left ladder hidden lg:block">
+            <img src="./images/ladder-left.png"/>
+        </div>
+    </section>
+
+    <section id="premium_lands" class="snap-start bg-bottom bg-cover">
+        <div class="md:pt-20">
+            <div class="md:grid md:grid-cols-2 content-end md:-mt-60 lg:-mt-52 xl:mt-0">
+                <div class="flex square_box_parent justify-center">
+                    <div class="square_box bg-no-repeat bg-center box-border">
+                        <div class="square_box_content w-full h-full mr-auto ml-auto">
+
+                            <video loop muted autoplay class="z-0 w-full h-full">
+                                <source src="videos/nft_premium_lands.webm" type="video/webm">
+                                <source src="videos/nft_premium_lands.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex square_box_parent justify-center">
+                    <div class="square_box bg-no-repeat bg-center box-border">
+                        <div class="square_box_content w-full h-full mr-auto ml-auto overflow-y-auto p-8">
+                            <div class="content_text text-3xl sm:text-2xl md:text-3xl space-y-6">
+                                <h2 class="font-black">Premium lands</h2>
+                                <p>
+                                    Once at game will be launched we offer limited edition of PREMIUM LAND's. Six series
+                                    for one sale price.
+                                    The smart contract that receives the payment will randomly select the nft and send
+                                    it to the player.
+                                    Then the premium land can be used in the game or put up for sale through the
+                                    Marketplace.
+                                </p>
+                                <p>
+                                    Premium Land Series details:
+                                    Common 55%: Town hall 4, mortar 1, air defense 2, cannon 4, cannon 4, gold storage
+                                    5, elixir storage 5, gold mine 6, gold mine 6, elixir collector 6, elixir collector
+                                    6.
+                                </p>
+                                <p>
+                                    Uncommon 25%: Town hall 5, mortar 1, air defense 3, cannon 5, cannon 5, gold storage
+                                    6, elixir storage 6, gold mine 7, gold mine 7, elixir collector 7, elixir collector
+                                    7.
+                                </p>
+                                <p>
+                                    Rare 13,8%: Town hall 6, clan castle 1, laboratory 1, mortar 2, air defense 4,
+                                    cannon 6, cannon 6, gold storage 7, gold storage 7, elixir storage 7, elixir storage
+                                    7, gold mine 8, gold mine 8, gold mine 8, elixir collector 8, elixir collector 8,
+                                    elixir collector 8.
+                                </p>
+                                <p>
+                                    Epic 5%: Town hall 7, clan castle 2, laboratory 2, mortar 3, air defense 5, cannon
+                                    7, cannon 7, gold storage 8, gold storage 8, elixir storage 8, elixir storage 8,
+                                    gold mine 9, gold mine 9, gold mine 9, elixir collector 9, elixir collector 9,
+                                    elixir collector 9.
+                                </p>
+                                <p>
+                                    Legendary 1%: Town hall 8, clan castle 3, laboratory 3, mortar 4, air defense 6,
+                                    cannon 8, cannon 8, gold storage 9, gold storage 9, elixir storage 9, elixir storage
+                                    9, gold mine 10, gold mine 10, gold mine 10, elixir collector 10, elixir collector
+                                    10, elixir collector 10.
+                                </p>
+                                <p>
+                                    Mythic 0.2%: Town hall 9, clan castle 4, laboratory 4, mortar 5, air defense 7,
+                                    cannon 9, cannon 9, cannon 9, gold storage 10, gold storage 10, elixir storage 10,
+                                    elixir storage 10, gold mine 11, gold mine 11, gold mine 11, gold mine 11, elixir
+                                    collector 11, elixir collector 11, elixir collector 11, elixir collector 11.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png" class="w-full h-auto"/>
+        </div>
+        <div class="ladder-right ladder hidden lg:block">
+            <img src="./images/ladder-right.png"/>
+        </div>
+    </section>
+
+    <section id="partners" class="snap-start bg-bottom bg-cover">
+        <div class="pt-20 px-10 pb-40">
+            <div class="flex justify-center">
+                <div>
+                    <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10 text-center"><h1>
+                        Partners</h1></div>
+                    <div class="content_text flex gap-8 items-center justify-center">
+                        <a class="inline-block" href="https://humanguild.io/" target="_blank">
+                            <picture>
+                                <source srcset="images/partners/partners-image-1.webp" type="image/webp">
+                                <img src="images/partners/partners-image-1.png" alt="">
+                            </picture>
+                        </a>
+                        <a class="inline-block" href="https://near.org/" target="_blank">
+                            <picture>
+                                <source srcset="images/partners/partners-image-2.webp" type="image/webp">
+                                <img src="images/partners/partners-image-2.png" alt="">
+                            </picture>
+                        </a>
+                        <a class="inline-block" href="https://twitter.com/NearGamesGuild" target="_blank">
+                            <picture>
+                                <source srcset="images/partners/partners-image-3.webp" type="image/webp">
+                                <img src="images/partners/partners-image-3.png" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png"/>
+        </div>
+
+        <div class="ladder-left ladder hidden lg:block">
+            <img src="./images/ladder-left.png"/>
+        </div>
+    </section>
+
+    <section id="footer" class="snap-start bg-bottom bg-cover relative">
+        <div>
+            <img src="./images/bg/footer.jpg"/>
+
+            <div class="z-10 block absolute w-full h-full text-center" id="play_button_block-bottom">
+                <p id="play_button_block_counter-bottom"
+                   class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center
+               text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+               space-x-2 flex items-center justify-center"></p>
+                <a id="play_button_block_button_whitelist-bottom"
+                   class="z-10 absolute
+               -bottom-7 sm:-bottom-8 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full
+               text-base sm:text-xl md:text-xl
+               bg-contain bg-no-repeat
+                flex justify-center items-center whitespace-nowrap"
+                   href="javascript:;">Join the whitelist</a>
+                <a id="play_button_block_button-bottom"
+                   class="z-10 absolute top-0 left-1/2 disabled inline-block h-full
+               w-1/5
+               bg-center bg-contain bg-no-repeat"
+                   href="javascript:;"></a>
+            </div>
+
+            <div class="bottom-5 z-10 block absolute w-full h-10 text-center">
+                <div class="flex justify-center items-center space-x-12">
+                    <a target="blank" href="https://twitter.com/LandToEmpire"
+                       class="inline-block hover:opacity-75 transition-all">
+                        <img src="images/icons/twitter.svg" alt="Twitter" class="drop-shadow-xl hover:drop-shadow-md">
                     </a>
-                    <a target="blank" href="https://t.me/LandToEmpire_Chat" class="ready__icon">
-                        <img src="img/telegram.svg" alt="">
+                    <a target="blank" href="https://discord.gg/frJnywAsHS"
+                       class="inline-block hover:opacity-75 transition-all">
+                        <img src="images/icons/discord.svg" alt="Discord" class="drop-shadow-xl hover:drop-shadow-md">
                     </a>
-                    <a target="blank" href="https://discord.gg/B6P3JaTH" class="ready__icon">
-                        <img src="img/discord.svg" alt="">
+                    <a target="blank" href="https://t.me/LandToEmpire_Chat"
+                       class="inline-block hover:opacity-75 transition-all">
+                        <img src="images/icons/telegram.svg" alt="Telegram chanel"
+                             class="drop-shadow-xl hover:drop-shadow-md">
                     </a>
                 </div>
             </div>
-        </section>
-        <!-- Ready end -->
+        </div>
+    </section>
 
-    </main>
-
-</div>
-
-<script src="js/app.min.js?_v=20220108011349"></script>
+</main>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="src/js.js"></script>
 </html>
