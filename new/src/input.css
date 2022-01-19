@@ -28,7 +28,8 @@ header {
 }
 
 h1, h2, h3 {
-    font-weight: normal;
+    @apply tracking-widest font-bold;
+    font-family: 'acampus', sans-serif;
 }
 
 section {
@@ -50,11 +51,11 @@ section {
 }
 
 .ladder-left {
-    @apply -left-16;
+    @apply -left-12;
 }
 
 .ladder-right {
-    @apply -right-8;
+    @apply -right-12;
 }
 
 .ladder-left, .ladder-right {
