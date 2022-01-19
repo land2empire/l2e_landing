@@ -38,13 +38,20 @@
         </video>
         <div class="z-10 block absolute w-full h-full text-center" id="play_button_block">
             <p id="play_button_block_counter"
-               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center text-2xl md:text-3xl lg:text-4xl xl:text-5xl space-x-2 flex items-center justify-center"></p>
+               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center
+               text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+               space-x-2 flex items-center justify-center"></p>
             <a id="play_button_block_button_whitelist"
-               class="z-10 absolute -bottom-6 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full w-1/5 bg-contain bg-no-repeat
-flex justify-center items-center text-xs md:text-xl whitespace-nowrap"
+               class="z-10 absolute
+               -bottom-7 sm:-bottom-8 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full
+               text-xl md:text-xl
+               bg-contain bg-no-repeat
+                flex justify-center items-center  whitespace-nowrap"
                href="javascript:;">Join the whitelist</a>
             <a id="play_button_block_button"
-               class="z-10 absolute top-0 left-1/2 disabled inline-block h-full w-1/5 bg-center bg-contain bg-no-repeat"
+               class="z-10 absolute top-0 left-1/2 disabled inline-block h-full
+               w-1/5
+               bg-center bg-contain bg-no-repeat"
                href="javascript:;"></a>
         </div>
         <div class="grass">
@@ -233,14 +240,14 @@ flex justify-center items-center text-xs md:text-xl whitespace-nowrap"
 
     <section id="premium_lands" class="snap-start bg-bottom bg-cover">
         <div class="md:pt-20">
-            <div class="md:grid md:grid-cols-2 content-end md:-mt-96 lg:-mt-52 xl:mt-0">
+            <div class="md:grid md:grid-cols-2 content-end md:-mt-60 lg:-mt-52 xl:mt-0">
                 <div class="flex square_box_parent justify-center">
                     <div class="square_box bg-no-repeat bg-center box-border">
                         <div class="square_box_content w-full h-full mr-auto ml-auto">
-                            <video width="96%" height="95%" controls autoplay>
-                                <source src="images/nft_premium_lands.gif.webm" type="video/webm">
-                                Your browser does not support the video tag.
-                                <!-- Text to be shown incase browser doesnt support html5 -->
+
+                            <video loop muted autoplay class="z-0 w-full h-full">
+                                <source src="videos/nft_premium_lands.webm" type="video/webm">
+                                <source src="videos/nft_premium_lands.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
@@ -248,7 +255,8 @@ flex justify-center items-center text-xs md:text-xl whitespace-nowrap"
                 <div class="flex square_box_parent justify-center">
                     <div class="square_box bg-no-repeat bg-center box-border">
                         <div class="square_box_content w-full h-full mr-auto ml-auto overflow-y-auto p-8">
-                            <div class="content_text text-lg md:text-xl leading-relaxed">
+                            <div class="content_text text-3xl sm:text-2xl md:text-3xl space-y-6">
+                                <h2>Premium lands</h2>
                                 <p>
                                     Once at game will be launched we offer limited edition of PREMIUM LAND's. Six series
                                     for one sale price.
@@ -306,14 +314,47 @@ flex justify-center items-center text-xs md:text-xl whitespace-nowrap"
         </div>
     </section>
 
-    <section id="footer" class="snap-start bg-bottom bg-cover">
+    <section id="footer" class="snap-start bg-bottom bg-cover relative">
         <div>
             <img src="./images/bg/footer.png"/>
-        </div>
 
-        <!--        <div class="ladder-right ladder hidden lg:block">-->
-        <!--            <img src="./images/ladder-right.png"/>-->
-        <!--        </div>-->
+            <div class="z-10 block absolute w-full h-full text-center" id="play_button_block-bottom">
+                <p id="play_button_block_counter-bottom"
+                   class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center
+               text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
+               space-x-2 flex items-center justify-center"></p>
+                <a id="play_button_block_button_whitelist-bottom"
+                   class="z-10 absolute
+               -bottom-7 sm:-bottom-8 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full
+               text-base sm:text-xl md:text-xl
+               bg-contain bg-no-repeat
+                flex justify-center items-center whitespace-nowrap"
+                   href="javascript:;">Join the whitelist</a>
+                <a id="play_button_block_button-bottom"
+                   class="z-10 absolute top-0 left-1/2 disabled inline-block h-full
+               w-1/5
+               bg-center bg-contain bg-no-repeat"
+                   href="javascript:;"></a>
+            </div>
+
+            <div class="bottom-5 z-10 block absolute w-full h-10 text-center">
+                <div class="flex justify-center items-center space-x-12">
+                    <a target="blank" href="https://twitter.com/LandToEmpire"
+                       class="inline-block hover:opacity-75 transition-all">
+                        <img src="images/icons/twitter.svg" alt="Twitter" class="drop-shadow-xl hover:drop-shadow-md">
+                    </a>
+                    <a target="blank" href="https://discord.gg/B6P3JaTH"
+                       class="inline-block hover:opacity-75 transition-all">
+                        <img src="images/icons/discord.svg" alt="Discord" class="drop-shadow-xl hover:drop-shadow-md">
+                    </a>
+                    <a target="blank" href="https://t.me/LandToEmpire_Chat"
+                       class="inline-block hover:opacity-75 transition-all">
+                        <img src="images/icons/telegram.svg" alt="Telegram chanel"
+                             class="drop-shadow-xl hover:drop-shadow-md">
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
 </main>

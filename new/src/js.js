@@ -29,12 +29,15 @@ let timerInterval = setInterval(function () {
 
     // Display the result in the element with id="demo"
     document.getElementById("play_button_block_counter").innerHTML = counterText;
+    document.getElementById("play_button_block_counter-bottom").innerHTML = counterText;
 
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(timerInterval);
         document.getElementById("play_button_block_button").classList.remove('disabled');
+        document.getElementById("play_button_block_button-bottom").classList.remove('disabled');
         document.getElementById("play_button_block_counter").style.display = 'none';
+        document.getElementById("play_button_block_counter-bottom").style.display = 'none';
     }
 }, 1000);
 
