@@ -208,6 +208,26 @@ a#play_button_block_button_whitelist-bottom {
     margin-top: 38px;
 }
 
+.asset_place {
+    @apply transition-all w-24 h-24;
+}
+
+.asset_place-first {
+    display: block;
+}
+
+.asset_place:hover .asset_place-first {
+    display: none;
+}
+
+.asset_place-anim {
+    display: none;
+}
+
+.asset_place:hover .asset_place-anim {
+    display: block;
+}
+
 
 @media (min-width: 580px) {
     a#play_button_block_button_whitelist,

@@ -24,7 +24,7 @@
 <!--<main class="text-white relative">-->
 <main class="relative lg:max-h-screen lg:overflow-y-scroll lg:overflow-x-hidden lg:snap lg:snap-y lg:snap-mandatory text-white">
 
-    <header class="fixed top-0 z-50">
+    <header class="absolute top-0 z-50">
         <picture class="w-full">
             <source class="w-full" srcset="images/header-image.webp" type="image/webp">
             <img class="w-full" src="images/header-image.png" alt="">
@@ -199,42 +199,94 @@
         </div>
     </section>
 
-<!--    <section id="assets" class="snap-start bg-bottom bg-cover">-->
-<!--        <div class="pt-20 px-10 pb-40">-->
-<!--            <div class="flex justify-center">-->
-<!--                <div>-->
+    <section id="assets" class="snap-start bg-bottom bg-cover">
+        <div class="pt-20 px-10 pb-40">
+            <div class="flex justify-center">
+                <div>
+                    <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10 text-center">
+                        <h1>Assets</h1>
+                    </div>
+                    <div class="space-y-12 px-10">
+                        <div class="flex justify-center gap-12 flex-wrap">
+                            <div class="asset_place">
+                                <img src="images/units/elixir_collector11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/elixir_collector.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/elixir_storage11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/elixir_storage.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/gold_mine11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/gold_mine.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/gold_storage11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/gold_storage.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/laboratory8.png" class="asset_place-first"/>
+                                <img src="images/anim_units/laboratory.gif" class="asset_place-anim"/>
+                            </div>
+                        </div>
 
-<!--                    <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10"><h1>Assets</h1></div>-->
-<!--                    <div class="content_text text-xl md:text-2xl leading-relaxed">-->
-<!--                        Land to Empire is a play-to-earn mobile ready strategy game on Near Protocol.-->
-<!--                        The game is set in a fantasy world where the player is the lord of the land. In-->
-<!--                        LandtoEmpire,-->
-<!--                        players have to upgrade their land using resources gained from attacking other players lands-->
-<!--                        or producing them on their land. To attack, players train different types of troops using-->
-<!--                        resources.-->
-<!--                        The main resources are gold and elixir. Players can unite into clans, which can then-->
-<!--                        participate-->
-<!--                        in clan battles, and communicate with each other.-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                &lt;!&ndash;                <div class="wide_container bg-no-repeat bg-center box-border flex justify-center">&ndash;&gt;-->
-<!--                &lt;!&ndash;                    <div class="wide_container_content px-10 py-8 overflow-y-auto">&ndash;&gt;-->
-<!--                &lt;!&ndash;                        <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10"><h1>Assets</h1></div>&ndash;&gt;-->
-<!--                &lt;!&ndash;                        <div class="content_text text-xl md:text-2xl leading-relaxed">&ndash;&gt;-->
-<!--                &lt;!&ndash;                            Assets&ndash;&gt;-->
-<!--                &lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--                &lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--                &lt;!&ndash;                </div>&ndash;&gt;-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="grass">-->
-<!--            <img src="./images/bg/grass.png"/>-->
-<!--        </div>-->
+                        <div class="flex justify-center gap-12 flex-wrap">
+                            <div class="asset_place">
+                                <img src="images/units/air_defense8.png" class="asset_place-first"/>
+                                <img src="images/anim_units/air_defense.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/cannon12.png" class="asset_place-first"/>
+                                <img src="images/anim_units/cannon.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/mortar7.png" class="asset_place-first"/>
+                                <img src="images/anim_units/mortar.gif" class="asset_place-anim"/>
+                            </div>
+                        </div>
 
-<!--        <div class="ladder-right ladder hidden lg:block">-->
-<!--            <img src="./images/ladder-right.png"/>-->
-<!--        </div>-->
-<!--    </section>-->
+                        <div class="flex justify-center gap-12 flex-wrap">
+                            <div class="asset_place">
+                                <img src="images/units/archer_tower11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/archer_tower.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/army_camp8.png" class="asset_place-first"/>
+                                <img src="images/anim_units/army_camp.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/barrack11.png" class="asset_place-first"/>
+                                <img src="images/anim_units/barrack.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/clan_castle5.png" class="asset_place-first"/>
+                                <img src="images/anim_units/clan_castle.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/hidden_tesla7.png" class="asset_place-first"/>
+                                <img src="images/anim_units/hidden_tesla.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/town_hall10.png" class="asset_place-first"/>
+                                <img src="images/anim_units/town_hall.gif" class="asset_place-anim"/>
+                            </div>
+                            <div class="asset_place">
+                                <img src="images/units/wizard_tower7.png" class="asset_place-first"/>
+                                <img src="images/anim_units/wizard_tower.gif" class="asset_place-anim"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grass">
+            <img src="./images/bg/grass.png"/>
+        </div>
+
+        <div class="ladder-right ladder hidden lg:block">
+            <img src="./images/ladder-right.png"/>
+        </div>
+    </section>
 
     <section id="how2play" class="snap-start bg-bottom bg-cover">
         <div class="md:pt-20 p-10">
@@ -254,8 +306,8 @@
             <img src="./images/bg/grass.png"/>
         </div>
 
-        <div class="ladder-right ladder hidden lg:block">
-            <img src="./images/ladder-right.png"/>
+        <div class="ladder-left ladder hidden lg:block">
+            <img src="./images/ladder-left.png"/>
         </div>
     </section>
 
@@ -330,8 +382,8 @@
         <div class="grass">
             <img src="./images/bg/grass.png" class="w-full h-auto"/>
         </div>
-        <div class="ladder-left ladder hidden lg:block">
-            <img src="./images/ladder-left.png"/>
+        <div class="ladder-right ladder hidden lg:block">
+            <img src="./images/ladder-right.png"/>
         </div>
     </section>
 
@@ -339,7 +391,8 @@
         <div class="pt-20 px-10 pb-40">
             <div class="flex justify-center">
                 <div>
-                    <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10 text-center"><h1>Partners</h1></div>
+                    <div class="content_title text-3xl md:text-5xl font-black pb-5 md:pb-10 text-center"><h1>
+                        Partners</h1></div>
                     <div class="content_text flex gap-8 items-center justify-center">
                         <a class="inline-block" href="javascript:;">
                             <picture>
@@ -367,8 +420,8 @@
             <img src="./images/bg/grass.png"/>
         </div>
 
-        <div class="ladder-right ladder hidden lg:block">
-            <img src="./images/ladder-right.png"/>
+        <div class="ladder-left ladder hidden lg:block">
+            <img src="./images/ladder-left.png"/>
         </div>
     </section>
 
