@@ -136,6 +136,14 @@ a#play_button_block_button_whitelist-bottom {
     background-image: url('../images/bg/03_gameplay.jpg');
 }
 
+#nft {
+    background-image: url('../images/bg/06_nft.jpg');
+}
+
+#roadmap {
+    background-image: url('../images/bg/07_roadmap.jpg');
+}
+
 #partners {
     background-image: url('../images/bg/08_partners.jpg');
 }
