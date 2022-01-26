@@ -71,50 +71,17 @@ section {
     background-image: url('../images/bg/02_about.jpg');
 }
 
-#play_button_block {
-    bottom: 25%;
-    height: 10%;
-}
-
-#play_button_block-bottom {
-    bottom: 80%;
-    height: 8%;
-}
-
-a#play_button_block_button,
-a#play_button_block_button-bottom {
-    background-image: url('../images/intro-btn.png');
-    margin-left: -10%;
-}
-
-a#play_button_block_button_whitelist,
-a#play_button_block_button_whitelist-bottom {
-    background-position: 50% 60%;
-    background-image: url('../images/empty_button.png');
-    margin-left: -35%;
-    width: 70%;
-    height: 150%;
-}
-
 #play_button_block_button.disabled,
-#play_button_block_button-bottom.disabled {
-    background-image: none;
-}
-
-#play_button_block_counter_text {
-    /*margin-left: -10%;*/
+#play_button_block_button_whitelist.disabled,
+#play_button_block_button-bottom.disabled,
+#play_button_block_button_whitelist-bottom.disabled {
+    @apply hidden;
 }
 
 #play_button_block_counter,
 #play_button_block_counter-bottom {
-    margin-left: -10%;
+    /*margin-left: -10%;*/
     font-family: 'acampus', sans-serif;
-}
-
-#play_button_block_counter span,
-#play_button_block_counter_text span,
-#play_button_block_counter-bottom span {
-    @apply inline-block;
 }
 
 #about {
@@ -241,29 +208,8 @@ a#play_button_block_button_whitelist-bottom {
     display: block;
 }
 
-
-@media (min-width: 580px) {
-    a#play_button_block_button_whitelist,
-    a#play_button_block_button_whitelist-bottom {
-        margin-left: -25%;
-        width: 50%;
-        height: 110%;
-    }
-
-    #play_button_block-bottom {
-        bottom: 30%;
-        height: 10%;
-    }
-}
-
 /*sm*/
 @media (min-width: 640px) {
-    a#play_button_block_button_whitelist,
-    a#play_button_block_button_whitelist-bottom {
-        margin-left: -12.5%;
-        width: 25%;
-        height: 100%;
-    }
 }
 
 /*md*/
@@ -287,12 +233,6 @@ a#play_button_block_button_whitelist-bottom {
         width: 680px;
         height: 655px;
         margin-top: 38px;
-    }
-
-    a#play_button_block_button_whitelist,
-    a#play_button_block_button_whitelist-bottom {
-        margin-left: -10%;
-        width: 20%;
     }
 }
 
