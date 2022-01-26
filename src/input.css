@@ -166,7 +166,6 @@ section {
 
 }
 
-
 .square_box_parent {
     @apply bg-no-repeat bg-bottom pt-20;
     background-image: url('../images/bg/02_about.jpg');
@@ -206,6 +205,10 @@ section {
 
 .asset_place:hover .asset_place-anim {
     display: block;
+}
+
+#c9-button.c9-plain {
+    display: none !important;
 }
 
 /*sm*/

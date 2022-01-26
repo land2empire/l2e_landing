@@ -71,4 +71,10 @@ $(document).ready(function () {
             $(this).find('.square_box').css({transform: 'scale(' + (scale) + ')'});
         });
     }
+
+    $(document).on('click', '#play_button_block_button_whitelist,#play_button_block_button_whitelist-bottom', function () {
+        $('#c9-button').click();
+        return false;
+    });
+
 })
