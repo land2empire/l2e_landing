@@ -35,10 +35,13 @@ let timerInterval = setInterval(function () {
     if (distance < 0) {
         clearInterval(timerInterval);
         document.getElementById("play_button_block_button").classList.remove('disabled');
+        document.getElementById("play_button_block_button_whitelist").classList.add('disabled');
         document.getElementById("play_button_block_button-bottom").classList.remove('disabled');
+        document.getElementById("play_button_block_button_whitelist-bottom").classList.add('disabled');
         document.getElementById("play_button_block_counter").style.display = 'none';
         document.getElementById("play_button_block_counter_text").style.display = 'none';
         document.getElementById("play_button_block_counter-bottom").style.display = 'none';
+        document.getElementById("play_button_block_counter_text-bottom").style.display = 'none';
     }
 }, 1000);
 

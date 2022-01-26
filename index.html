@@ -39,30 +39,25 @@
             <source src="videos/intro.webm" type="video/webm">
             <source src="videos/intro.mp4" type="video/mp4">
         </video>
-        <div class="z-10 block absolute w-full h-full text-center" id="play_button_block">
+        <div class="z-20 block absolute bottom-10 w-full text-center" id="play_button_block">
+
             <p id="play_button_block_counter_text"
-               class="z-20 absolute w-full -top-4 left-0 tracking-wider">
-                <span>
-                    Game mainnet launch in
-                </span>
+               class="w-full tracking-wider text-normal sm:text-xl">
+                Game mainnet launch in
             </p>
             <p id="play_button_block_counter"
-               class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center
-               text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
-               space-x-2 flex items-center justify-center"></p>
+               class="w-full text-center space-x-2
+                       text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"></p>
             <a id="play_button_block_button_whitelist"
-               class="z-10 absolute
-               -bottom-7 sm:-bottom-8 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full
-               text-xl md:text-xl
-               bg-contain bg-no-repeat
-                flex justify-center items-center  whitespace-nowrap
-                e-widget" href="https://gleam.io/8713Q/land-to-empire-giveaway" rel="nofollow">Whitelist and
-                Giveaway</a>
+               class="text-center flex content-center justify-center my-2 e-widget"
+               href="https://gleam.io/8713Q/land-to-empire-giveaway" rel="nofollow">
+                <img src="images/empty_button.svg" class="w-1/2 sm:w-1/3 lg:w-1/4" alt="Whitelist and Giveaway"/>
+            </a>
             <a id="play_button_block_button"
-               class="z-10 absolute top-0 left-1/2 disabled inline-block h-full
-               w-1/5
-               bg-center bg-contain bg-no-repeat"
-               href="javascript:;"></a>
+               class="disabled text-center flex content-center justify-center"
+               href="javascript:;">
+                <img src="images/intro-btn.png" class="w-1/3 sm:w-1/4 lg:w-1/5"/>
+            </a>
         </div>
         <div class="grass">
             <img src="./images/bg/grass.png" class="w-full h-auto"/>
@@ -580,39 +575,40 @@
         <div>
             <img src="./images/bg/footer.jpg"/>
 
-            <div class="z-10 block absolute w-full h-full text-center" id="play_button_block-bottom">
+            <div class="z-10 bottom-20 block absolute w-full text-center" id="play_button_block-bottom">
+                <p id="play_button_block_counter_text-bottom"
+                   class="w-full tracking-wider text-normal sm:text-xl">
+                    Game mainnet launch in
+                </p>
                 <p id="play_button_block_counter-bottom"
-                   class="z-20 absolute top-0 left-1/2 h-full w-1/5 text-center
-               text-base sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl
-               space-x-2 flex items-center justify-center"></p>
+                   class="w-full text-center space-x-2
+                       text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl"></p>
                 <a id="play_button_block_button_whitelist-bottom"
-                   class="z-10 absolute
-               -bottom-7 sm:-bottom-8 md:-bottom-10 lg:-bottom-14 left-1/2 inline-block h-full
-               text-base sm:text-xl md:text-xl
-               bg-contain bg-no-repeat
-                flex justify-center items-center whitespace-nowrap"
-                   href="javascript:;">Join the whitelist</a>
+                   class="text-center flex content-center justify-center my-2 e-widget"
+                   href="https://gleam.io/8713Q/land-to-empire-giveaway" rel="nofollow">
+                    <img src="images/empty_button.svg" class="w-1/2 sm:w-1/3 lg:w-1/4" alt="Whitelist and Giveaway"/>
+                </a>
                 <a id="play_button_block_button-bottom"
-                   class="z-10 absolute top-0 left-1/2 disabled inline-block h-full
-               w-1/5
-               bg-center bg-contain bg-no-repeat"
-                   href="javascript:;"></a>
+                   class="disabled text-center flex content-center justify-center"
+                   href="javascript:;">
+                    <img src="images/intro-btn.png" class="w-1/3 sm:w-1/4 lg:w-1/5"/>
+                </a>
             </div>
 
-            <div class="bottom-5 z-10 block absolute w-full h-10 text-center">
-                <div class="flex justify-center items-center space-x-12">
+            <div class="bottom-5 z-10 block absolute w-full h-6 md:h-10 text-center">
+                <div class="flex justify-center items-center space-x-12 h-6 md:h-10">
                     <a target="blank" href="https://twitter.com/LandToEmpire"
                        class="inline-block hover:opacity-75 transition-all">
-                        <img src="images/icons/twitter.svg" alt="Twitter" class="drop-shadow-xl hover:drop-shadow-md">
+                        <img src="images/icons/twitter.svg" alt="Twitter" class="drop-shadow-xl hover:drop-shadow-md h-6 md:h-10">
                     </a>
                     <a target="blank" href="https://discord.gg/frJnywAsHS"
                        class="inline-block hover:opacity-75 transition-all">
-                        <img src="images/icons/discord.svg" alt="Discord" class="drop-shadow-xl hover:drop-shadow-md">
+                        <img src="images/icons/discord.svg" alt="Discord" class="drop-shadow-xl hover:drop-shadow-md h-6 md:h-10">
                     </a>
                     <a target="blank" href="https://t.me/LandToEmpire_Chat"
                        class="inline-block hover:opacity-75 transition-all">
                         <img src="images/icons/telegram.svg" alt="Telegram chanel"
-                             class="drop-shadow-xl hover:drop-shadow-md">
+                             class="drop-shadow-xl hover:drop-shadow-md h-6 md:h-10">
                     </a>
                 </div>
             </div>
