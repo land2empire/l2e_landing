@@ -1,11 +1,12 @@
 // Set the date we're counting down to
-let countDownDate = new Date(Date.UTC(2022, 1, 1, 0, 0, 0)).getTime();
+// let countDownDate = new Date(Date.UTC(2022, 1, 1, 0, 0, 0)).getTime();
 
-function twoDigits(number) {
-    return number < 10 ? '0' + number : number;
-}
+// function twoDigits(number) {
+//     return number < 10 ? '0' + number : number;
+// }
 
 // Update the count down every 1 second
+/*
 let timerInterval = setInterval(function () {
 
     // Get today's date and time
@@ -44,18 +45,18 @@ let timerInterval = setInterval(function () {
         document.getElementById("play_button_block_counter_text-bottom").style.display = 'none';
     }
 }, 1000);
-
+*/
 $(document).ready(function () {
 
     let resizeTimeout;
     recalculateLadder();
     recalculateBoxes();
 
-    $(window).on('resize', function () {
-        clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(recalculateLadder, 50);
-        resizeTimeout = setTimeout(recalculateBoxes, 50);
-    });
+    // $(window).on('resize', function () {
+    //     clearTimeout(resizeTimeout);
+    //     resizeTimeout = setTimeout(recalculateLadder, 50);
+    //     resizeTimeout = setTimeout(recalculateBoxes, 50);
+    // });
 
     function recalculateLadder() {
         $('.ladder').each(function () {

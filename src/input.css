@@ -71,18 +71,18 @@ section {
     background-image: url('../images/bg/02_about.jpg');
 }
 
-#play_button_block_button.disabled,
-#play_button_block_button_whitelist.disabled,
-#play_button_block_button-bottom.disabled,
-#play_button_block_button_whitelist-bottom.disabled {
-    @apply hidden;
-}
+/*#play_button_block_button.disabled,*/
+/*#play_button_block_button_whitelist.disabled,*/
+/*#play_button_block_button-bottom.disabled,*/
+/*#play_button_block_button_whitelist-bottom.disabled {*/
+/*    @apply hidden;*/
+/*}*/
 
-#play_button_block_counter,
-#play_button_block_counter-bottom {
-    /*margin-left: -10%;*/
-    font-family: 'acampus', sans-serif;
-}
+/*#play_button_block_counter,*/
+/*#play_button_block_counter-bottom {*/
+/*    !*margin-left: -10%;*!*/
+/*    font-family: 'acampus', sans-serif;*/
+/*}*/
 
 #about {
     background-image: url('../images/bg/02_about.jpg');
