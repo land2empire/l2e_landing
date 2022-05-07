@@ -48,15 +48,21 @@ let timerInterval = setInterval(function () {
 */
 $(document).ready(function () {
 
-    let resizeTimeout;
+    let resizeTimeout, scrollTimeout;
+    var $elementOffset = $('#play_button_block_button').offset().top;
     recalculateLadder();
     recalculateBoxes();
+    recalculateFixedPlayButton();
 
     // $(window).on('resize', function () {
     //     clearTimeout(resizeTimeout);
     //     resizeTimeout = setTimeout(recalculateLadder, 50);
     //     resizeTimeout = setTimeout(recalculateBoxes, 50);
     // });
+
+    $(window).on('scroll', function () {
+        scrollTimeout = setTimeout(recalculateFixedPlayButton, 50);
+    });
 
     function recalculateLadder() {
         $('.ladder').each(function () {
@@ -77,5 +83,18 @@ $(document).ready(function () {
         $('#c9-button').click();
         return false;
     });
+
+    function recalculateFixedPlayButton() {
+        let $windowScrollTop = $(window).scrollTop();
+
+        if ($elementOffset <= $windowScrollTop) {
+            if (!$('#play_button_block_button').hasClass('fixed_button')) {
+                $('#play_button_block_button').addClass('fixed_button');
+            }
+        } else {
+            $('#play_button_block_button').removeClass('fixed_button');
+        }
+    }
+
 
 })

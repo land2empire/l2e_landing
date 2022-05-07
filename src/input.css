@@ -264,3 +264,9 @@ section {
         margin-top: 38px;
     }
 }
+
+#play_button_block_button.fixed_button {
+    @apply fixed top-1 left-0 w-full;
+
+    z-index: 999;
+}
